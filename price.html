@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя веб-страница</title>
+  <style>
+    body {
+      background-color: #faf3e0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Шапка */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #006400;
+      padding: 10px 20px;
+      color: white;
+    }
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .header-left img {
+      width: 120px;
+      height: auto;
+    }
+    .header-left h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      gap: 40px;
+    }
+    .menu a {
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Карточки товаров */
+    .kartinki {
+      display: flex;
+      flex-wrap: nowrap; /* не переносим на новую строку */
+      gap: 20px; 
+      overflow-x: auto; /* горизонтальная прокрутка при необходимости */
+      padding: 20px;
+      justify-content: center; /* выравнивание */
+    }
+
+    .kartinki .item {
+      text-align: center;
+      flex: 0 0 auto; /* фиксированная ширина блока */
+      width: 180px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .kartinki .item:hover {
+      transform: scale(1.05); /* лёгкое увеличение при наведении */
+    }
+
+    .kartinki img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 10px;
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .kartinki img:hover {
+      transform: scale(1.05); /* чуть увеличиваем картинку */
+    }
+
+    .kartinki p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    footer {
+      color: #333;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+      background-color: #f0e6d2;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <img src="https://avatars.mds.yandex.net/i?id=8765bf1d9a4dfffc0aed418d2320651b57f517a5-10651281-images-thumbs&n=13" alt="Татарская пауза">
+      <h1>Tatar pause</h1>
+    </div>
+    <div class="menu">
+      <a href="index.html">Главная</a>
+      <a href="price.html">Товары</a>
+      <a href="about.html">О нас</a>
+    </div>
+  </div>
+
+  <div class="kartinki">
+    <div class="item">
+      <img src="im/chashka.png" alt="Чашка для правшей">
+      <p>Чашка для правшей – 450р</p>
+    </div>
+    <div class="item">
+      <img src="im/chashka lev.png" alt="Чашка для левшей">
+      <p>Чашка для левшей – 450р</p>
+    </div>
+    <div class="item">
+      <img src="im/kr.png" alt="Чашка">
+      <p>Чашка – 500р</p>
+    </div>
+    <div class="item">
+      <img src="im/1.png" alt="Чай для сердца">
+      <p>Чай для сердца – 400р</p>
+    </div>
+    <div class="item">
+      <img src="im/2.png" alt="Чай для печени">
+      <p>Чай для печени – 400р</p>
+    </div>
+    <div class="item">
+      <img src="im/3.png" alt="Индийский чай">
+      <p>Индийский чай – 450р</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Tatar Pause
+  </footer>
+</body>
+</html>
